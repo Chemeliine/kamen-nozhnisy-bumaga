@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Исправь ошибку</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js.js" defer></script>
+</head>
+<body>
+    <h1>Камень ножницы бумага</h1>
+    <p>Победитель определяется по следующим правилам: бумага побеждает камень («бумага обёртывает камень»). <br>Камень побеждает ножницы («камень затупляет ножницы»). Ножницы побеждают бумагу («ножницы разрезают бумагу»). <br> Если игроки показали одинаковый знак, то засчитывается ничья и игра переигрывается.</p>
+    
+    <div id="gamezone">
+        <div class="left">
+                <h2>Компьютер</h2>
+                <div id="comp-zone">
+              
+                </div> 
+                <h2>Ты</h2>       
+                <div id="player-zone"> 
+                
+                </div>
+        </div>              
+        <div id="console">
+            <button onclick="rock();"><img width="100%" height="100%" src="https://sberbusiness.live/bcp-laika-public/04d02ab7-28ba-4ece-9b53-bda03e6cbe54/original" alt=""></button><br>
+            <button onclick="cut();"><img width="100%" height="100%" src="https://papus666.narod.ru/clipart/n/nogn/nogn13.png"></button> <br>
+            <button onclick="paper();"><img width="100%" height="100%" src="https://static.vecteezy.com/system/resources/thumbnails/018/795/027/small/white-notebook-paper-with-all-edges-ripped-png.png"></button>
+            <br>
+            <div id="result"> </div>
+        </div>
+    </div>    
+</body>
+</html>
